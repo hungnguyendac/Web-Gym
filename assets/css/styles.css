@@ -177,6 +177,10 @@
     /* margin-right: 30px; */
 }
 
+.menu-main .active {
+    font-weight: bold;
+}
+
 .menu-main li a {
     font-size: 15px;
     line-height: 40px;
@@ -192,6 +196,89 @@
     color: #fff;
     font-size: 15px;
 }
+
+.menu-main span {
+    animation: changeColor 1s infinite;
+}
+
+@keyframes changeColor {
+  50% { color: green; }
+}
+
+/* Banner */
+.banner .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner button span {
+    color: black;
+    font-size: 50px;
+    border-radius: 50px;
+}
+
+.banner .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.banner .owl-dots button span {
+    width: 20px!important;
+    height: 5px!important;
+}
+
+.banner .owl-dots button.active span {
+    background-color: #000!important;
+}
+
+
+/* Section */
+.section {
+    height: 120px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section .container {
+    max-width: 100%;
+}
+.item-box {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-box img {
+    height: 54px;
+    object-fit: cover;
+}
+
+.item-box .item-text {
+    margin-left: 20px;
+}
+
+.item-box .item-text h5 {
+    font-size: 18px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.item-box .item-text p {
+    margin-bottom: 0;
+    font-size: 11pt;
+    color: #000;
+    font-weight: 600;
+}
+
+
 
 /* Responsive cua giao dien PC, may chieu, may in */
 .icon-user .search-ic, .icon-user .bar-ic {

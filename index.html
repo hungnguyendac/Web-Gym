@@ -27,7 +27,6 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
-
         <!-- Header-top -->
         <div class="header-top">
             <div class="container">
@@ -47,12 +46,20 @@
                         <div class="wrap-main">
                             <div class="wrap-1">
                                 <div class="logo">
-                                    <img src="./assets/img/Logo.png" alt="Logo">
+                                    <img
+                                        src="./assets/img/Logo.png"
+                                        alt="Logo"
+                                    />
                                 </div>
                                 <div class="search">
-                                    <input type="text" placeholder="Bạn muốn tìm gì ?">
+                                    <input
+                                        type="text"
+                                        placeholder="Bạn muốn tìm gì ?"
+                                    />
                                     <button>
-                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"
+                                        ></i>
                                     </button>
                                 </div>
                             </div>
@@ -62,15 +69,23 @@
                                         <i class="fas fa-phone-square"></i>
                                     </div>
                                     <div class="hotline-tittle">
-                                        <a href="tel:+0902 77 1186">0902 77 1186</a>
+                                        <a href="tel:+0902 77 1186"
+                                            >0902 77 1186</a
+                                        >
                                         <p>Hotline đặt hàng</p>
                                     </div>
                                 </div>
                                 <div class="icon-user">
                                     <i class="fas fa-user"></i>
-                                    <span class="search-ic"><i class="fas fa-search"></i></span>
-                                    <span><i class="fas fa-shopping-basket"></i></span>
-                                    <span class="bar-ic"><i class="fas fa-bars"></i></span>
+                                    <span class="search-ic"
+                                        ><i class="fas fa-search"></i
+                                    ></span>
+                                    <span
+                                        ><i class="fas fa-shopping-basket"></i
+                                    ></span>
+                                    <span class="bar-ic"
+                                        ><i class="fas fa-bars"></i
+                                    ></span>
                                 </div>
                             </div>
                         </div>
@@ -85,11 +100,11 @@
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12">
                         <ul class="menu-main">
-                            <li>
+                            <li class="active">
                                 <a href="#">TRANG CHỦ</a>
                             </li>
                             <li>
-                                <a href="#">FLASH SALE</a>
+                                <a href="#"><span>FLASH SALE</span></a>
                             </li>
                             <li>
                                 <a href="#">ĐỒ TẬP NAM</a>
@@ -124,8 +139,61 @@
             </div>
         </div>
 
+        <!-- Banner -->
+        <div class="banner">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./assets/img/Banner1.jpg" alt="Ảnh banner 1" />
+                </div>
+                <div class="item">
+                    <img src="./assets/img/Banner2.jpg" alt="Ảnh banner 2" />
+                </div>
+            </div>
+        </div>
 
-
+        <!-- Section -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="item-box">
+                            <img src="./assets/img/section1.png" alt="" />
+                            <div class="item-text">
+                                <h5>MIỄN PHÍ GIAO HÀNG</h5>
+                                <p>Miễn phí giao hàng trong nội thành phố</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="item-box">
+                            <img src="./assets/img/section2.png" alt="" />
+                            <div class="item-text">
+                                <h5>ƯU ĐÃI COMBO</h5>
+                                <p>Mua 5 sản phẩm tặng ngay 1 sản phẩm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="item-box">
+                            <img src="./assets/img/section3.png" alt="" />
+                            <div class="item-text">
+                                <h5>HỖ TRỢ ĐỔI HÀNG</h5>
+                                <p>Hỗ trợ đổi sản phẩm trong 7 ngày</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="item-box">
+                            <img src="./assets/img/section4.png" alt="" />
+                            <div class="item-text">
+                                <h5>HỆ THỐNG CỬA HÀNG</h5>
+                                <p>Hơn 20 cửa hàng trên toàn quốc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Import JS Bootstrap -->
         <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -134,9 +202,7 @@
         <script src="./lib/jquery-3.7.1.min.js"></script>
         <!-- Import JS OwlCarousel -->
         <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
-        <!-- Import main.js -->
-        <script src="./assets/js/main.js"></script>
-        <!-- Import menu-mobi.js -->
-        <script src="./assets/js/menu-mobi.js"></script>
+        <!-- Import carousel.js -->
+        <script src="./assets/js/carousel.js"></script>
     </body>
 </html>
