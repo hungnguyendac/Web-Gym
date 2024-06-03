@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/quicksand/Quicksand-Light.eot');
+    src: url('../font/quicksand/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/quicksand/Quicksand-Light.woff2') format('woff2'),
+        url('../font/quicksand/Quicksand-Light.woff') format('woff'),
+        url('../font/quicksand/Quicksand-Light.ttf') format('truetype'),
+        url('../font/quicksand/Quicksand-Light.svg#Quicksand-Light') format('svg');
+    /* font-weight: 300; */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+.container {
+    max-width: 1150px;
+}
+
+/* Header-top */
+.header-top {
+    width: 100%;
+    height: 20px;
+    background-color: #000;
+}
+
+.header-top p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+/* Header-main */
+.header-main {
+    height: 111px;
+    width: 100%;
+    background-color: #F4F4F4;
+}
+
+
+.wrap-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap-1 {
+    display: flex;
+}
+
+.wrap-2 {
+    display: flex;
+}
+
+.logo {
+    height: 111px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 135px;
+    object-fit: cover;
+}
+
+.search {
+    height: 111px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: relative;
+}
+
+.search input {
+    height: 33px;
+    width: 270px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #363333;
+    font-weight: 600;
+}
+
+.search button {
+    height: 33px;
+    width: 34px;
+    border: none;
+    background-color: #000;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    right: -2px;
+}
+
+.search button i {
+    color: #fff;
+}
+
+.hotline {
+    height: 111px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.hotline-icon i {
+    font-size: 40px;
+    color: #FF0000;
+    margin-right: 10px;
+}
+
+.hotline-tittle a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FF0000;
+    font-weight: bolder;
+}
+
+.hotline-tittle p {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.icon-user {
+    height: 111px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-user i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.icon-user span i {
+    background-color: #719F31;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* Header bottom */
+.header-bottom {
+    height: 40px;
+    width: 100%;
+    background-color: #322F31;
+}
+
+.menu-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.menu-main li {
+    list-style: none;
+    /* margin-right: 30px; */
+}
+
+.menu-main li a {
+    font-size: 15px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-main li a:hover {
+    font-weight: bold;
+}
+
+.menu-main li i {
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Responsive cua giao dien PC, may chieu, may in */
+.icon-user .search-ic, .icon-user .bar-ic {
+    display: none;
+}
+
+/* Desktop */
+@media screen and (max-width: 1279px) {
+    
+}
+
+@media screen and (max-width: 850px) {
+    .search, .hotline {
+        display: none;
+    }
+    .icon-user .search-ic, .icon-user .bar-ic {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .header-bottom {
+        height: auto;
+    }
+    .menu-main {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Moblie */
+@media screen and (max-width: 480px) {
+    
+}
