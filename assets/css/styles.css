@@ -218,7 +218,7 @@
     }
     .menu-main {
         flex-wrap: wrap;
-        height: auto;
+        justify-content: space-around;
     }
 
 }
