@@ -163,10 +163,78 @@
     box-sizing: border-box;
     font-family: "Roboto";
 }
-    
+
+/* CSS cho lớp phủ */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9999999;
+}
+
+/* CSS để làm mờ nội dung trang */
+.blur {
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+
 .container {
     max-width: 1150px;
 }
+
+.close-moblie {
+    width: 100%;
+    position: fixed;
+    z-index: 99999999;
+    display: none;
+}
+
+.close-moblie button {
+    position: absolute;
+    border: none;
+    top: 10px;
+    right: 10px;
+    transition: all .3s;
+}
+
+.close-moblie button:hover {
+    color: #fff;
+}
+
+/* Xem thêm Global */
+.xem-them {
+    margin-top: 30px;
+    width: 128px;
+    height: 32px;
+    background-color: #000;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.xem-them:hover {
+    cursor: pointer;
+}
+
+.xem-them a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 32px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.xem-them a:hover {
+    color: #42A939;
+}
+
     
 /* Header-top */
 .header-top {
@@ -189,9 +257,9 @@
     height: 111px;
     width: 100%;
     background-color: #F4F4F4;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 999999999;
+    z-index: 999999;
 }
 
 .wrap-main {
@@ -307,7 +375,7 @@
     height: 40px;
     width: 100%;
     background-color: #322F31;
-    position: sticky;
+    position: fixed;
     top: 100px;
     z-index: 999999999;
 }
@@ -348,8 +416,9 @@
     font-size: 12px;
 }
 
-.header-bottom .menu-main span {
-    animation: changeColor 1s infinite;
+.header-bottom .menu-main span,
+.menu-moblie span {
+    animation: changeColor .8s infinite;
 }
 
 @keyframes changeColor {
@@ -462,21 +531,105 @@
 }
 
 /* ---------------------------------------------------- */
-/* --------------- Chưa làm --------------------------- */
+/* -------------------- Menu-moblie --------------------------- */
 .popup-moblie {
-    width: 500px;
-    height: 500px;
-    background-color: skyblue;
-    display: none;
+    width: 260px;
+    height: 100%;
+    background-color: #F3F3F3;
+    position: fixed;
+    z-index: 99999999999;
+    top: 0;
+    left: -100%;
+    transition: all .3s;
+    /* overflow: scroll; */
 }
 
 .popup-moblie .search {
+    width: 210px;
+}
+
+.popup-moblie .search input {
+    width: 180px;
+}
+
+.menu-moblie {
+    width: 100%;
+}
+
+.menu-moblie ul {
+    padding-left: 0;
+}
+
+.menu-moblie ul li {
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid rgb(218, 217, 217);
+    border-bottom: 1px solid rgb(218, 217, 217);
     position: relative;
 }
 
-.popup-moblie .search button {
+.menu-moblie ul li:hover {
+    background-color: rgb(219, 216, 216);
+}
+
+.menu-moblie ul li a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+    font-size: 13px;
+    margin-left: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.menu-moblie ul li:hover a {
+    color: #000;
+    font-weight: 550;
+}
+
+.menu-moblie ul li i {
+    cursor: pointer;
+    margin-right: 20px;
+    line-height: 50px;
+    font-size: 20px;
     position: absolute;
-    right: 200px;
+    top: 0;
+    right: 0;
+}
+
+/* Menu-moblie Con */
+.menu-moblie ul li.li-moblie{
+    height: auto;
+}
+
+.menu-moblie .li-moblie .list-menu-moblie{
+    height: auto;
+    display: none;
+}
+
+.menu-moblie .li-moblie .list-menu-moblie li {
+    border-top: none;
+    border-bottom: none;
+}
+
+.menu-moblie .li-moblie .list-menu-moblie span a { 
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-moblie .li-moblie .list-menu-moblie li {
+    margin-left: 15px;
+}
+
+.menu-moblie .li-moblie .list-menu-moblie li:hover a{
+    color: #42A939;
+}
+
+
+.popup-moblie .hotline {
+    justify-content: center;
 }
 
 /* ---------------------------------------------------- */
@@ -485,6 +638,7 @@
 .banner {
     width: 100%;
     height: auto;
+    margin-top: 120px;
 }
 .banner .owl-nav {
     position: absolute;
@@ -522,7 +676,7 @@
 /* Section */
 .section {
     width: 100%;
-    height: 120px;
+    height: auto;
     margin-top: 20px;
 }
 
@@ -561,9 +715,9 @@
 
 /*--------- New Products --------*/
 .title-main {
-    height: 52px;
+    height: auto;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -610,8 +764,11 @@
 .products {
     width: 100%;
     padding: 30px;
-    border: 1px solid #ddd;
     background-color: #fff;
+}
+    
+.products-new {
+    border: 1px solid #ddd;
 }
 
 .product a {
@@ -663,6 +820,195 @@
     font-weight: 600;
 }
 
+/* ------ Các sản phẩm --------- */
+.products .tittle-product {
+    margin-bottom: 30px;
+}
+.products .tittle-product a {
+    text-decoration: none;
+    color: #8DC73D;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+.products .tittle-product a:hover {
+    color: #000;
+}
+
+
+/* Khách hàng trải nghiệm sản phẩm */
+.client {
+    width: 100%;
+}
+
+.client img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.text-description {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text-description h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.text-description input {
+    display: none;
+}
+
+.text-description p {
+    font-size: 16px;
+}
+
+.text-description p a {
+    text-decoration: none;
+    color: #8DC73D;
+    font-weight: 700;
+}
+
+.text-description p a:hover {
+    color: #42A939;
+}
+
+.text-description p span {
+    display: none;
+}
+
+.text-description input:checked ~ p span {
+    display: inline;
+}
+
+.text-description label {
+    width: 100%;
+    color: blue;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-description input:checked ~ label::before {
+    content: "Rút gọn";
+}
+
+.text-description label:hover {
+    color: rgb(73, 73, 255);
+}
+
+.text-description input:not(:checked) ~ label::before {
+    content: "Xem thêm";
+}
+
+/* ----------------------Tin tức---------------------- */
+.news a {
+    text-decoration: none;
+}
+
+.news a .card {
+    border: none;
+}
+
+.news .card-body h5 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.news .card-body p {
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+
+.news .card-body p:hover {
+    color: #42A939;
+}
+
+/* -----------------------Footer --------------------*/
+.footer {
+    width: 100%;
+    background-color: #000;
+    margin-top: 30px;
+}
+
+.footer .footer-left {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer .footer-left .logo img {
+    width: 200px;
+}
+
+.footer .footer-left-tittle {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.footer .footer-left-tittle p {
+    font-size: 16px;
+}
+
+.footer .footer-center {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer .footer-center ul {
+    margin-top: 20px;
+}
+
+.footer .footer-center ul h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.footer .footer-center ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.footer .footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer .footer-right {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer .footer-right img:first-child {
+    width: 100%;
+}
+
+.footer .footer-right img:last-child {
+    width: 150px;
+    margin-top: 50px;
+}
+
+.footer-bottom {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #8DC73D;
+}
+
+
 /* Responsive cua giao dien PC, may chieu, may in */
 .icon-user .search-ic, .icon-user .bar-ic {
     display: none;
@@ -673,7 +1019,7 @@
     
 }
 
-@media screen and (max-width: 1033px) {
+@media screen and (max-width: 1025px) {
     .header-bottom {
         height: 80px;
     }
@@ -685,6 +1031,10 @@
 
     .header-bottom .menu-main li .sub-menu {
         top: 80px;
+    }
+
+    .banner {
+        margin-top: 160px;
     }
 }
 
@@ -721,13 +1071,17 @@
 }
 
 @media screen and (max-width: 850px) {
-    .search, .hotline {
+    .header-main .search, .header-main .hotline {
         display: none;
     }
-    .icon-user .search-ic, .icon-user .bar-ic {
+    .icon-user i, .icon-user span, .icon-user .search-ic, .icon-user .bar-ic {
         display: block;
+        cursor: pointer;
     }
     .header-bottom {
         display: none;
+    }
+    .banner {
+        margin-top: 90px;
     }
 }
