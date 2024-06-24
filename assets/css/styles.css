@@ -511,7 +511,7 @@
 }
 
 .header-bottom .menu-main .sub-menu-2 a li{
-    color: rgba(102, 102, 102, 0.85);
+    color: #000;
     padding-left: 15px;
     font-size: 14px;
 }
@@ -672,6 +672,10 @@
     background-color: #000!important;
 }
 
+.banner-section {
+    margin-top: 0;
+}
+
 
 /* Section */
 .section {
@@ -732,33 +736,30 @@
 .tabs {
     width: 100%;
     height: auto;
-}
-
-.tabs-menu {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 0;
 }
 
-.tabs-menu li {
-    height: 42px;
-    width: 140px;
-    list-style: none;
-    background-color: rgba(0, 0, 0, 0.04);
-    border-top: 2px solid #ddd;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    text-align: center;
-    margin-right: 5px;
+
+.tabs button {
+    background-color: #F4F4F4;
+    font-size: 16px;
+    color: rgb(145, 144, 144);
+    padding: 10px 10px;
+    width: 150px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    font-weight: 500;
 }
 
-.tabs-menu li a {
-    text-decoration: none;
-    font-size: 13px;
+.tabs button:hover {
     color: #000;
-    line-height: 42px;
-    padding: 10px 15px;
+}
+
+.tabs .button-active {
+    background-color: #fff;
+    border-top: 2px solid #42A939;
+    color: #000;
 }
 
 .products {
@@ -768,7 +769,12 @@
 }
     
 .products-new {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
+    display: none;
+}
+
+.products-new-active {
+    display: block;
 }
 
 .product a {
@@ -905,12 +911,19 @@
 }
 
 /* ----------------------Tin tức---------------------- */
+.news {
+    width: 100%;
+}
 .news a {
     text-decoration: none;
+    width: 100%;
+    height: auto;
 }
 
 .news a .card {
     border: none;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .news .card-body h5 {
@@ -1083,5 +1096,13 @@
     }
     .banner {
         margin-top: 90px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .news a .card{
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }

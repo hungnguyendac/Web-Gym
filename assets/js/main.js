@@ -42,3 +42,24 @@ faDown.forEach((value, index) => {
         }
     })
 })
+
+// Sự kiện click nút button ở Sản phẩm mới
+const buttons = document.querySelectorAll(".tabs button");
+const productsNewEl = document.querySelectorAll(".products-new");
+
+buttons.forEach( (button) => {
+    button.addEventListener("click", () => {
+        document.querySelector(".button-active").classList.remove("button-active");
+        button.classList.add("button-active");
+
+        productsNewEl.forEach( (product) => {
+            product.classList.remove("products-new-active");
+        })
+
+        const targetId = button.getAttribute("data-target");
+        const targetProducts = document.getElementById(targetId);
+        if (targetProducts) {
+            targetProducts.classList.add("products-new-active");
+        }
+    })
+})
