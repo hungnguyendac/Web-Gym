@@ -372,7 +372,7 @@
 
 /* Header bottom */
 .header-bottom {
-    height: 40px;
+    height: auto;
     width: 100%;
     background-color: #322F31;
     position: fixed;
@@ -393,10 +393,6 @@
 .header-bottom .menu-main li {
     list-style: none;
     margin-right: 20px;
-}
-
-.header-bottom .menu-main .active {
-    font-weight: bold;
 }
 
 .header-bottom .menu-main li a {
@@ -429,7 +425,6 @@
 .sub-menu {
     position: absolute;
     width: 100%;
-    /* flex: 1; */
     height: auto;
     left: 0;
     top: 100%;
@@ -440,6 +435,7 @@
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
+    transition: all .3s;
 }
 
 .sub-menu .menu-c1 h3 {
@@ -468,6 +464,7 @@
 .sub-menu .menu-c1 a li i {
     color: rgba(102, 102, 102, 0.85);
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .sub-menu .menu-c1 a li:hover{
@@ -499,6 +496,7 @@
     padding: 0;
     opacity: 0;
     visibility: hidden;
+    transition: all .3s;
 }
 
 .sub-menu-2-last {
@@ -520,6 +518,7 @@
 .header-bottom .menu-main li:hover .sub-menu-2{
     opacity: 1;
     visibility: visible;
+    transition-delay: 0s;
 }
 
 .header-bottom .menu-main .sub-menu-2 li:hover {
@@ -631,6 +630,8 @@
 .popup-moblie .hotline {
     justify-content: center;
 }
+
+/*-------------------- Giỏ hàng -----------------------*/
 
 /* ---------------------------------------------------- */
 
@@ -1032,7 +1033,7 @@
     
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1039px) {
     .header-bottom {
         height: 80px;
     }
