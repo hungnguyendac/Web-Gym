@@ -778,6 +778,10 @@
     display: block;
 }
 
+.products .product {
+    margin-bottom: 30px;
+}
+
 .product a {
     text-decoration: none;
 }
@@ -1033,7 +1037,7 @@
     
 }
 
-@media screen and (max-width: 1039px) {
+@media screen and (max-width: 933px) {
     .header-bottom {
         height: 80px;
     }
