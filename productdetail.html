@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Thế giới đồ tập</title>
+        <title>Product Detail</title>
 
         <!-- Import Fontawesome -->
         <link href="./lib/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -25,6 +25,8 @@
 
         <!-- Import styles.css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Import producdetail.css -->
+        <link rel="stylesheet" href="./assets/css/productdetail.css" />
     </head>
     <body>
         <div id="overlay" class="overlay"></div>
@@ -89,10 +91,8 @@
                                     <span class="search-ic">
                                         <i class="fas fa-search"></i>
                                     </span>
-                                    <span class="cart-btn">
-                                        <i id="cart" class="fas fa-shopping-basket">
-                                            <span class="cart-quantity">0</span>
-                                        </i>
+                                    <span>
+                                        <i class="fas fa-shopping-basket"></i>
                                     </span>
                                     <span class="bar-ic">
                                         <i class="fas fa-bars"></i>
@@ -244,7 +244,7 @@
                                                 Áo Croptop
                                             </li>
                                         </a>
-                                        <hr />                                       
+                                        <hr />
                                         <a href="">
                                             <li>Quần Tập Nữ</li>
                                         </a>
@@ -275,7 +275,7 @@
                                                 Quần Jogger
                                             </li>
                                         </a>
-                                        <hr />                                     
+                                        <hr />
                                         <a href=""
                                             ><li>Áo Khoác Thể Thao Nữ</li></a
                                         >
@@ -287,7 +287,7 @@
                                         alt=""
                                     />
                                 </ul>
-                            </li>                          
+                            </li>
                             <li class="menu-2">
                                 <a href="#">
                                     PHỤ KIỆN
@@ -378,7 +378,7 @@
                             <span><a href="">Áo Khoác Thể Thao Nữ</a></span>
                             <span><a href="">Bộ Đồ Tập Nữ</a></span>
                         </ul>
-                    </li>                   
+                    </li>
                     <li class="li-moblie">
                         <a href="">PHỤ KIỆN</a>
                         <i class="fas fa-chevron-down"></i>
@@ -421,407 +421,100 @@
             </div>
         </div>
 
-        <!-- Banner -->
-        <div class="banner">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="./assets/img/Banner1.jpg" alt="Ảnh banner 1" />
-                </div>
-                <div class="item">
-                    <img src="./assets/img/Banner2.jpg" alt="Ảnh banner 2" />
-                </div>
-            </div>
-        </div>
-
-        <!-- Section -->
-        <div class="section">
+        <!----------------------------- Sản phẩm ---------------------------->
+        <div class="product-detail">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="item-box">
-                            <img src="./assets/img/section1.png" alt="" />
-                            <div class="item-text">
-                                <h5>MIỄN PHÍ GIAO HÀNG</h5>
-                                <p>Miễn phí giao hàng trong nội thành phố</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="item-box">
-                            <img src="./assets/img/section2.png" alt="" />
-                            <div class="item-text">
-                                <h5>ƯU ĐÃI COMBO</h5>
-                                <p>Mua 5 sản phẩm tặng ngay 1 sản phẩm</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="item-box">
-                            <img src="./assets/img/section3.png" alt="" />
-                            <div class="item-text">
-                                <h5>HỖ TRỢ ĐỔI HÀNG</h5>
-                                <p>Hỗ trợ đổi sản phẩm trong 7 ngày</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="item-box">
-                            <img src="./assets/img/section4.png" alt="" />
-                            <div class="item-text">
-                                <h5>HỆ THỐNG CỬA HÀNG</h5>
-                                <p>Hơn 20 cửa hàng trên toàn quốc</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!------------------------- New Products ----------------------->
-        <div class="title-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h2>SẢN PHẨM MỚI</h2>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="tabs">
-                            <button data-target="do-tap-nam" class="button-active">Đồ Tập Nam</button>
-                            <button data-target="do-tap-nu">Đồ Tập Nữ</button>
-                            <button data-target="phu-kien-tap">Phụ Kiện Tập</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="products products-new products-new-active" id="do-tap-nam">
-            <div class="container">
-                <div class="row products-new-nam-js">
-                    <!-- Phần này trong file JS -->
-                </div>
-            </div>
-        </div>
-
-        <div class="products products-new" id="do-tap-nu">
-            <div class="container">
-                <div class="row products-new-nu-js">
-                    <!-- Phần này trong file JS -->
-                </div>
-            </div>
-        </div>
-
-        <div class="products products-new" id="phu-kien-tap">
-            <div class="container">
-                <div class="row products-new-phukien-js">
-                    <!-- Phần này trong file JS -->
-                </div>
-            </div>
-        </div>
-
-        <!------------------------- Banner ----------------------->
-        <div class="title-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h2>FASHION GYM & YOGA</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="banner banner-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022-1.jpg"
-                                    alt="Ảnh banner 1"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022-2.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022-3.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022-4.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022-5.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022-6.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022-7.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/Miss-Fitness-Viet-Nam-2022.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                            <div class="item">
-                                <img
-                                    src="./assets/img/banner2/thegioidotapvn-khai-truong-dai-showroom-1.jpg"
-                                    alt="Ảnh banner 2"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--------------- Sản phẩm bán chạy ----------------------->
-        <div class="title-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h2>SẢN PHẨM BÁN CHẠY</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Products nam -->
-        <div class="products">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="tittle-product">
-                            <a href="">ĐỒ TẬP GYM NAM</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row product-nam-js">
-                    <!-- Phần này trong file JS -->
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="xem-them">
-                            <a href="#">Xem tất cả</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Products nữ -->
-        <div class="products">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="tittle-product">
-                            <a href="#">ĐỒ TẬP GYM NỮ</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row product-nu-js">
-                    <!-- Phần này trong file JS -->
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="xem-them">
-                            <a href="#">Xem tất cả</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Products phụ kiện tập -->
-        <div class="products">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="tittle-product">
-                            <a href="#">PHỤ KIỆN TẬP</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row product-phukien-js">
-                    <!-- Phần này trong file JS -->
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="xem-them">
-                            <a href="#">Xem tất cả</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--------------- KHÁCH HÀNG TRẢI NGHIỆM SẢN PHẨM ----------------------->
-        <div class="title-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h2>KHÁCH HÀNG TRẢI NGHIỆM SẢN PHẨM</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="client">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <img
-                            src="./assets/img/khachhang/celeb-feedback-690x920-1.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <img
-                            src="./assets/img/khachhang/celeb-feedback-690x920-2.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <img
-                            src="./assets/img/khachhang/celeb-feedback-690x920-4.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <img
-                            src="./assets/img/khachhang/celeb-feedback-690x920-3-1.jpg"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-description">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h2>Hệ Thống Cửa hàng Thegioidotap.vn</h2>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <input type="checkbox" id="toggle" />
+                <div class="row product-detail-js">
+                    <!-- <div class="col-12 col-sm-12 col-md-12">
                         <p>
-                            Thegioidotap là thương hiệu thời trang thể thao hàng
-                            đầu chuyên cung cấp các sản phẩm <b>quần áo và</b>
-                            <a href="">phụ kiện tập gym</a>, tập yoga,
-                            <a href="">đồ thể thao</a> cho nam nữ.Thương hiệu
-                            hiện có hệ thống hơn 20
-                            <b>cửa hàng đồ tập gym</b> và yoga phân phối trên cả
-                            nước cùng hơn 100 đại lý trên toàn quốc. Sở hữu và
-                            phát triển
-                            <span
-                                >hai brand <b>đồ tập chính hãng</b> là ICADO và
-                                PAVO, tại Thegioidotap, bạn sẽ được lựa chọn các
-                                sản phẩm <b>đồ thể thao, gym, yoga</b> luôn luôn
-                                đa dạng mẫu mã, chất liệu, đi đầu xu hướng đồ
-                                thể thao với một mức giá hợp lý nhất. Các dòng
-                                sản phẩm <b>phụ kiện tập gym, yoga</b> như thảm
-                                tập, túi tập, băng quấn an toàn…vv cũng là sản
-                                phẩm thế mạnh của thương hiệu.Bên cạnh đó, hệ
-                                thống luôn áp dụng combo “MUA 5 TẶNG 1 – MUA 9
-                                TẶNG 2” đối với sản phẩm quần áo cùng chương
-                                trình tích điểm thành viên có giá trị trọn đời
-                                và nhiều ưu đãi khác tại từng thời điểm.
-                                Thegioidotap.vn luôn áp dụng chính sách mua
-                                hàng, giao hàng, đổi hàng với tiêu chí nhanh
-                                chóng, thuận tiện và làm hài lòng khách hàng. Sở
-                                hữu sản phẩm chất lượng, đội ngũ bán hàng chuyên
-                                nghiệp cùng quy trình phục vụ quy chuẩn, trải
-                                nghiệm mua sắm tại Thegioidotap.vn chắc chắn sẽ
-                                làm quý khách hài lòng!</span
-                            >
+                            <a href="/">Trang chủ</a> /
+                            <a href="">Đồ tập nam</a> /
+                            <a href="">Áo tập thun nam</a>
                         </p>
-                        <label for="toggle"></label>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- -------------------- Tin tức nổi bật --------------------------->
-        <div class="title-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <h2>TIN TỨC NỔI BẬT</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <a href="">
-                            <div class="card">
-                                <img src="./assets/img/Tin tuc/truoc-tap-gym-nen-an-gi-de-tang-can.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Chế độ ăn uống cho người tập Gym muốn tăng cân</h5>
-                                    <hr>
-                                    <p class="card-text">
-                                        Đối với những người gầy thì tập Gym được xem là biện pháp tăng cân...                                        
-                                    </p>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="banner">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/products-nam/Ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-1.png"
+                                        alt="Ảnh banner 1"
+                                    />
+                                </div>
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/products-nam/Ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-2.png"
+                                        alt="Ảnh banner 2"
+                                    />
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <a href="">
-                            <div class="card">
-                                <img src="./assets/img/Tin tuc/dau-hat-lanh.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">10 công dụng của dầu hạt lanh và các lưu ý khi sử dụng</h5>
-                                    <hr>
-                                    <p class="card-text">
-                                        Dầu hạt lanh là nguồn chứa nhiều axit béo omega 3 . Nó đem lại...                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <a href="">
-                            <div class="card">
-                                <img src="./assets/img/Tin tuc/tap-gym-cuong-do-cao.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Thegioidotap.vn – Thương hiệu nhượng quyền shop đồ tập gym yoga đầu tiên tại Việt nam</h5>
-                                    <hr>
-                                    <p class="card-text">
-                                        Thegioidotap.vn là thương hiệu chuyên cung cấp...                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="xem-them">
-                            <a href="#">Xem tất cả</a>
                         </div>
                     </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="product-detail-tittle">
+                            <h3>Áo Sát Nách Nam Tập Gym Yoga ICADO AT1</h3>
+                            <hr />
+                            <h3>280.000 VNĐ</h3>
+                            <ul>
+                                <li>
+                                    <b>Chất liệu</b>: 88% Polyester, 12%
+                                    spandex, co giãn 4 chiều
+                                </li>
+                                <li>
+                                    <b>Kiểu dáng</b>: Áo thể thao dành cho nam
+                                </li>
+                            </ul>
+                            <h6><span>Hướng dẫn chọn size nam</span></h6>
+                            <b>Hotline tư vấn miễn phí: 0902 77 1186</b>
+                            <h5><a href="">SHOP GẦN NHẤT</a></h5>
+                            <form>
+                                <input
+                                    type="number"
+                                    id="quantity"
+                                    name="quantity"
+                                    min="1"
+                                    value="1"
+                                />
+                                <button type="submit">THÊM VÀO GIỎ HÀNG</button>
+                            </form>
+                            <div class="product-detail-description">
+                                <h4>VÌ SAO CHỌN THEGIOIDOTAP.VN ?</h4>
+                                <ul>
+                                    <li>
+                                        <img src="./assets/img/htcuahang.png" alt="htcuahang">
+                                        <p><b>HỆ THỐNG HƠN 20 CỬA HÀNG </b>(Trên toàn quốc)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/Hotline-lien-he.png" alt="htcuahang">
+                                        <p><b>0902 77 1186 </b>(9:30 - 21:00 mỗi ngày)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/section1.png" alt="htcuahang">
+                                        <p><b>Miễn phí giao hàng </b>(Toàn quốc cho hóa đơn từ 500k)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/Mien-phi-giao-hang.png" alt="htcuahang">
+                                        <p><b>THANH TOÁN TIỆN LỢI </b>(Nhận hàng rồi mới trả tiền)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/section3.png" alt="htcuahang">
+                                        <p><b>ĐỔI HÀNG DỄ DÀNG </b>(Đổi mẫu/size/màu trong 30 ngày)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product-detail-description">
+                                <h6>Combo 5 Tặng 1: Mua 5 sản phẩm quần áo nguyên giá, nhận ngay 1 sản phẩm miễn phí</h6>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
+        <div class="modal">
+            <img class="modal-img">
+        </div>
+
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -907,5 +600,7 @@
         <script src="./assets/js/carousel.js"></script>
         <!-- Import main.js -->
         <script type="module" src="./assets/js/main.js"></script>
+        <!-- Import productdetail.js -->
+        <script type="module" src="./assets/js/productdetail.js"></script>
     </body>
 </html>

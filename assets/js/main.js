@@ -5,6 +5,7 @@ const menu_bar = document.querySelector(".bar-ic");
 const popup_menu = document.querySelector(".popup-moblie");
 const close_moblie = document.querySelector(".close-moblie");
 
+
 menu_bar.addEventListener("click", () => {
     popup_menu.style.left = "0";
     close_moblie.style.display = "inline-block";
@@ -26,7 +27,6 @@ close_moblie.addEventListener("click", () => {
 // Hiển thị menu-moblie con khi ấn vào icon "down"
 const popupMoblie = document.querySelector(".popup-moblie");
 const faDown = document.querySelectorAll(".li-moblie .fa-chevron-down");
-const liMoblie = document.querySelectorAll(".li-moblie");
 const listMenuMoblie = document.querySelectorAll(
     ".li-moblie .list-menu-moblie"
 );
@@ -36,12 +36,10 @@ faDown.forEach((value, index) => {
         if (listMenuMoblie[index].style.display === "block") {
             listMenuMoblie[index].style.display = "none";
             popupMoblie.style.overflow = "hidden";
-            // liMoblie[index].style.backgroundColor = "#F3F3F3";
         } else {
             listMenuMoblie[index].style.display = "block";
             popupMoblie.style.overflowY = "scroll";
             popupMoblie.style.overflowX = "hidden";
-            // liMoblie[index].style.backgroundColor = "rgb(219, 216, 216)";
         }
     });
 });
@@ -52,9 +50,7 @@ const productsNewEl = document.querySelectorAll(".products-new");
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        document
-            .querySelector(".button-active")
-            .classList.remove("button-active");
+        document.querySelector(".button-active").classList.remove("button-active");
         button.classList.add("button-active");
 
         productsNewEl.forEach((product) => {
@@ -69,42 +65,56 @@ buttons.forEach((button) => {
     });
 });
 
-// -------------------------Lấy sản phẩm ở "Sản phẩm bán chạy" ở trang chủ----------------------------------
-let productsNamJS = document.querySelector(".product-nam-js");
+// -------------------------Lấy sản phẩm ở trang chủ----------------------------------
 
 // Hiển thị sản phẩm mảng data lên giao diện người dùng
-const renderProducts = (data, listEL) => {
+const renderProducts = (data, listEL, fashionType, limit) => {
     const htmlEL = document.querySelector(listEL);
 
     let HTML = ``;
+    let count = 0;
     data.forEach((item) => {
-        HTML += `
-           <div class="col-6 col-sm-4 col-md-3">
-                <div class="product">
-                    <a href="#">
-                        <div class="image-container">
-                            img
-                                src="${item.normalImage}"
-                                alt="Normal Image"
-                                class="normal-img"
-                            />
-                            <img
-                                src="${item.hoverImage}"
-                                alt="Hover Image"
-                                class="hover-img"
-                            />
-                        </div>
-                    </a>
-                    <a href="">
-                        <h3>${item.name}</h3>
-                    </a>
-                    <p>${item.price} VNĐ</p>
+        if (
+            item.fashion.toLowerCase() === fashionType.toLowerCase() &&
+            count < limit
+        ) {
+            const formattedPrice = item.price.toLocaleString("vi-VN");
+            HTML += 
+            `
+               <div class="col-6 col-sm-4 col-md-3">
+                    <div class="product">
+                        <a href="productdetail.html?id=${item.id}">
+                            <div class="image-container">
+                                <img
+                                    src="${item.normalImage}"
+                                    alt="Normal Image"
+                                    class="normal-img"
+                                />
+                                <img
+                                    src="./${item.hoverImage}"
+                                    alt="Hover Image"
+                                    class="hover-img"
+                                />
+                            </div>
+                        </a>
+                        <a href="">
+                            <h3>${item.name}</h3>
+                        </a>
+                        <p>${formattedPrice} VNĐ</p>
+                    </div>
                 </div>
-            </div>
-        `;
+            ` ;
+            count++;
+        }
     });
 
     htmlEL.innerHTML = HTML;
 };
 
-renderProducts(data, ".product-nam-js");
+renderProducts(data, ".products-new-nam-js", "Nam", 4);
+renderProducts(data, ".products-new-nu-js", "Nữ", 4);
+renderProducts(data, ".products-new-phukien-js", "Phụ kiện", 4);
+
+renderProducts(data, ".product-nam-js", "Nam", 8);
+renderProducts(data, ".product-nu-js", "Nữ", 8);
+renderProducts(data, ".product-phukien-js", "Phụ kiện", 8);
