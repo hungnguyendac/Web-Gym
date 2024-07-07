@@ -5,7 +5,6 @@ const menu_bar = document.querySelector(".bar-ic");
 const popup_menu = document.querySelector(".popup-moblie");
 const close_moblie = document.querySelector(".close-moblie");
 
-
 menu_bar.addEventListener("click", () => {
     popup_menu.style.left = "0";
     close_moblie.style.display = "inline-block";
@@ -50,7 +49,9 @@ const productsNewEl = document.querySelectorAll(".products-new");
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        document.querySelector(".button-active").classList.remove("button-active");
+        document
+            .querySelector(".button-active")
+            .classList.remove("button-active");
         button.classList.add("button-active");
 
         productsNewEl.forEach((product) => {
@@ -64,6 +65,7 @@ buttons.forEach((button) => {
         }
     });
 });
+
 
 // -------------------------Lấy sản phẩm ở trang chủ----------------------------------
 
@@ -79,8 +81,7 @@ const renderProducts = (data, listEL, fashionType, limit) => {
             count < limit
         ) {
             const formattedPrice = item.price.toLocaleString("vi-VN");
-            HTML += 
-            `
+            HTML += `
                <div class="col-6 col-sm-4 col-md-3">
                     <div class="product">
                         <a href="productdetail.html?id=${item.id}">
@@ -103,7 +104,7 @@ const renderProducts = (data, listEL, fashionType, limit) => {
                         <p>${formattedPrice} VNĐ</p>
                     </div>
                 </div>
-            ` ;
+            `;
             count++;
         }
     });
