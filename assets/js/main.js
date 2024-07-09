@@ -49,9 +49,7 @@ const productsNewEl = document.querySelectorAll(".products-new");
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        document
-            .querySelector(".button-active")
-            .classList.remove("button-active");
+        document.querySelector(".button-active").classList.remove("button-active");
         button.classList.add("button-active");
 
         productsNewEl.forEach((product) => {

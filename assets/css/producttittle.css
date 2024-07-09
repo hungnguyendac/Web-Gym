@@ -51,6 +51,8 @@
 
 .tittle-main-1 {
     width: 100%;
+    /* position: sticky;
+    top: 150px; */
 }
 
 .tittle-main-1 h5 {
@@ -118,4 +120,25 @@
     position: absolute;
     left: 42%;
     top: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 750px) {
+    .tittle-top-2 p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .tittle-top-1 p {
+        text-align: center;
+    }
+
+    .tittle-top-2 {
+        margin-bottom: 30px;
+    }
+
+    .tittle-main-1 {
+        display: none;
+    }
 }
