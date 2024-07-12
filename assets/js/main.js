@@ -1,16 +1,17 @@
 import data from "./data.js";
 
-// Mở - Đóng Menu-moblie
+// ---------------------------Mở - Đóng Menu-moblie---------------------------------------
 const menu_bar = document.querySelector(".bar-ic");
 const popup_menu = document.querySelector(".popup-moblie");
 const close_moblie = document.querySelector(".close-moblie");
+const overlayEl = document.getElementById("overlay");
 
 menu_bar.addEventListener("click", () => {
     popup_menu.style.left = "0";
     close_moblie.style.display = "inline-block";
     menu_bar.style.opacity = "0";
 
-    document.getElementById("overlay").style.display = "block";
+    overlayEl.style.display = "block";
     document.body.style.overflowY = "hidden";
 });
 
@@ -19,11 +20,21 @@ close_moblie.addEventListener("click", () => {
     close_moblie.style.display = "none";
     menu_bar.style.opacity = "1";
 
-    document.getElementById("overlay").style.display = "none";
+    overlayEl.style.display = "none";
     document.body.style.overflowY = "scroll";
 });
 
-// Hiển thị menu-moblie con khi ấn vào icon "down"
+overlayEl.addEventListener("click", () => {
+    popup_menu.style.left = "-100%";
+    close_moblie.style.display = "none";
+    menu_bar.style.opacity = "1";
+
+    overlayEl.style.display = "none";
+    document.body.style.overflowY = "scroll";
+});
+
+
+// ----------------------Hiển thị menu-moblie con khi ấn vào icon "down"---------------------
 const popupMoblie = document.querySelector(".popup-moblie");
 const faDown = document.querySelectorAll(".li-moblie .fa-chevron-down");
 const listMenuMoblie = document.querySelectorAll(
@@ -43,7 +54,30 @@ faDown.forEach((value, index) => {
     });
 });
 
-// Sự kiện click nút button ở Sản phẩm mới
+
+/* --------------- Đóng - mở Popup giỏ hàng --------------------------- */
+
+let cardBtn = document.querySelector(".cart-btn");
+let cardModalOverlay = document.querySelector(".cart-modal-overlay");
+let closeBtn = document.querySelector("#close-btn");
+
+cardBtn.addEventListener("click", () => {
+    cardModalOverlay.style.transform = "translateX(0)";
+});
+
+closeBtn.addEventListener("click", () => {
+    cardModalOverlay.style.transform = "translateX(-200%)";
+});
+
+cardModalOverlay.addEventListener("click", (e) => {
+    // Kiểm tra xem có ấn vào cart-modal-overlay, đúng -> true, sai -> false
+    if (e.target.classList.contains("cart-modal-overlay") == true) {
+        cardModalOverlay.style.transform = "translateX(-200%)";
+    }
+});
+
+
+// ----------------------------Sự kiện click nút button ở Sản phẩm mới----------------------
 const buttons = document.querySelectorAll(".tabs button");
 const productsNewEl = document.querySelectorAll(".products-new");
 
@@ -65,9 +99,9 @@ buttons.forEach((button) => {
 });
 
 
-// -------------------------Lấy sản phẩm ở trang chủ----------------------------------
+// ----------------------------------Lấy sản phẩm ở trang chủ----------------------------------
 
-// Hiển thị sản phẩm mảng data lên giao diện người dùng
+// ----------------------------Hiển thị sản phẩm mảng data lên giao diện người dùng-----------------
 const renderProducts = (data, listEL, fashionType, limit) => {
     const htmlEL = document.querySelector(listEL);
 
