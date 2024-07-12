@@ -110,7 +110,7 @@ if (product) {
     console.error("Product not found");
 }
 
-// Sự kiện click Hướng dẫn chọn size
+// Sự kiện click Hướng dẫn chọn size (Chưa xong)
 const sizeWM = document.querySelector(".size-guide-women");
 const sizeML = document.querySelector(".size-guide-male");
 
@@ -119,8 +119,15 @@ const close_moblie = document.querySelector(".close-moblie");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-img");
 
-sizeWM.addEventListener("click", () => {
+sizeML.addEventListener("click", (e) => {
     modal.style.display = "block";
-    modalImg.src = "./assets/img/Screenshot 2024-06-30 131608.png";
+    modalImg.src = "./assets/img/Screenshot-2024-06-30-131608.png";
     close_moblie.style.display = "inline-block";
 });
+
+sizeWM.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImg.src = "./assets/img/Screenshot-2024-07-02-143806.png";
+    close_moblie.style.display = "inline-block";
+});
+

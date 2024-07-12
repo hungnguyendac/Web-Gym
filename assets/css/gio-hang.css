@@ -116,3 +116,94 @@ tbody .cart-product-tittle {
 
 
 /* ----------------------------------.cart-right ----------------------------------------*/
+.cart-right {
+    width: 100%;
+    border-left: 1px solid #ccc;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    border: 3px solid #000;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.item-shipping {
+   
+}
+
+.shipping-info {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.checkout-button {
+    width: 100%;
+    background-color: #8BC34A;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.checkout-button:hover {
+    background-color: #7CB342;
+}
+
+.discount-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.discount-label {
+    margin-bottom: 8px;
+}
+
+.discount-input {
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+.apply-button {
+    padding: 8px;
+    background-color: #8BC34A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #7CB342;
+}
+
+@media screen and (max-width: 767px) {
+    .cart-left {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .cart-left-price, .provisional ,.cart-price {
+        display: none;
+    }
+}

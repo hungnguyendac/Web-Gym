@@ -91,8 +91,10 @@
                                     <span class="search-ic">
                                         <i class="fas fa-search"></i>
                                     </span>
-                                    <span>
-                                        <i class="fas fa-shopping-basket"></i>
+                                    <span class="cart-btn">
+                                        <i id="cart" class="fas fa-shopping-basket">
+                                            <span class="cart-quantity">0</span>
+                                        </i>
                                     </span>
                                     <span class="bar-ic">
                                         <i class="fas fa-bars"></i>
@@ -307,10 +309,10 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">SỰ KIỆN</a>
+                                <a href="./tintuc.html">SỰ KIỆN</a>
                             </li>
                             <li class="menu-2">
-                                <a href="#">
+                                <a href="./bai-tap-gym.html">
                                     BÀI TẬP GYM
                                 </a>
                             </li>
@@ -383,9 +385,9 @@
                     <li class="li-moblie">
                         <a href="">CỬA HÀNG</a>                       
                     </li>
-                    <li><a href="">SỰ KIỆN</a></li>
+                    <li><a href="./tintuc.html">SỰ KIỆN</a></li>
                     <li class="li-moblie">
-                        <a href="">BÀI TẬP GYM</a>                     
+                        <a href="./bai-tap-gym.html">BÀI TẬP GYM</a>                     
                     </li>
                 </ul>
             </div>
@@ -396,6 +398,24 @@
                 <div class="hotline-tittle">
                     <a href="tel:+0902 77 1186">0902 77 1186</a>
                     <p>Hotline đặt hàng</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Giỏ hàng -->
+        <div class="cart-modal-overlay">
+            <div class="cart-modal">
+                <i id="close-btn" class="fas fa-times"></i>
+                <h1 class="cart-is-empty">Cart is empty</h1>
+
+                <div class="product-rows">
+                    <!-- Thêm sp vào trong giỏ hàng -->
+                </div>
+                <div class="total">
+                    <h3>GIỎ HÀNG</h3>
+                    <hr>
+                    <span>Chưa có sản phẩm nào trong giỏ hàng.</span>
+                    <a href="./gio-hang.html"><button>Giỏ Hàng</button></a>
                 </div>
             </div>
         </div>
