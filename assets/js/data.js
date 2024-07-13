@@ -1,8 +1,8 @@
 const data = [
     {
         id: 1,
-        normalImage: "./assets/img/products-nam/ao-khoac/168.png",
-        hoverImage: "./assets/img/products-nam/ao-khoac/169.png",
+        normalImage: "..//assets/img/products-nam/ao-khoac/168.png",
+        hoverImage: "..//assets/img/products-nam/ao-khoac/169.png",
         name: "Áo Khoác Thể Thao Nam Nón Rời PAVO AT1",
         price: 495000,
         tittle: "60% Cotton, 28% Polyester, 12% spandex, co giãn 4 chiều",
