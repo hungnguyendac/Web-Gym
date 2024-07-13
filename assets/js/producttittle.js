@@ -62,12 +62,12 @@ const renderProducts = (products, listEL) => {
                         <a href="productdetail.html?id=${item.id}">
                             <div class="image-container">
                                 <img
-                                    src="${item.normalImage}"
+                                    src="./${item.normalImage}"
                                     alt="Normal Image"
                                     class="normal-img"
                                 />
                                 <img
-                                    src="${item.hoverImage}"
+                                    src="./${item.hoverImage}"
                                     alt="Hover Image"
                                     class="hover-img"
                                 />
