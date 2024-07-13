@@ -124,7 +124,7 @@ const renderProducts = (data, listEL, fashionType, limit) => {
                                     class="normal-img"
                                 />
                                 <img
-                                    src="./${item.hoverImage}"
+                                    src="${item.hoverImage}"
                                     alt="Hover Image"
                                     class="hover-img"
                                 />
