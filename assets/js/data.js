@@ -1,8 +1,8 @@
 const data = [
     {
         id: 1,
-        normalImage: "/assets/img/products-nam/ao-khoac/168.png",
-        hoverImage: "/assets/img/products-nam/ao-khoac/169.png",
+        normalImage: "./assets/img/products-nam/ao-khoac/168.png",
+        hoverImage: "./assets/img/products-nam/ao-khoac/169.png",
         name: "Áo Khoác Thể Thao Nam Nón Rời PAVO AT1",
         price: 495000,
         tittle: "60% Cotton, 28% Polyester, 12% spandex, co giãn 4 chiều",
@@ -14,8 +14,8 @@ const data = [
     },
     {
         id: 2,
-        normalImage: "/assets/img/products-nam/ao-khoac/85.png",
-        hoverImage: "/assets/img/products-nam/ao-khoac/84.png",
+        normalImage: "./assets/img/products-nam/ao-khoac/85.png",
+        hoverImage: "./assets/img/products-nam/ao-khoac/84.png",
         name: "Áo Khoác Thể Thao Nam ICADO AT4",
         price: 495000,
         tittle: "60% Cotton, 28% Polyester, 12% spandex, co giãn 4 chiều",
@@ -28,9 +28,9 @@ const data = [
     {
         id: 3,
         normalImage:
-            "/assets/img/products-nam/ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-1.png",
+            "./assets/img/products-nam/ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-1.png",
         hoverImage:
-            "/assets/img/products-nam/ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-2.png",
+            "./assets/img/products-nam/ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-2.png",
         name: "Áo Ngắn Tay Tập Gym Yoga Nam ICADO AT38",
         price: 280000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -43,9 +43,9 @@ const data = [
     {
         id: 4,
         normalImage:
-            "/assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-den-1.png",
+            "./assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-den-1.png",
         hoverImage:
-            "/assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-den-2.png",
+            "./assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-den-2.png",
         name: "Áo Sát Nách Nam Tập Gym Yoga ICADO AT1",
         price: 280000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -58,9 +58,9 @@ const data = [
     {
         id: 5,
         normalImage:
-            "/assets/img/products-nam/ao-thun/ao-polo-tap-gym-yoga-nam-icado-xanh-1.png",
+            "./assets/img/products-nam/ao-thun/ao-polo-tap-gym-yoga-nam-icado-xanh-1.png",
         hoverImage:
-            "/assets/img/products-nam/ao-thun/ao-polo-tap-gym-yoga-nam-icado-xanh-2.png",
+            "./assets/img/products-nam/ao-thun/ao-polo-tap-gym-yoga-nam-icado-xanh-2.png",
         name: "Áo Polo Tập Gym Yoga Nam ICADO AT34",
         price: 320000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -73,9 +73,9 @@ const data = [
     {
         id: 6,
         normalImage:
-            "/assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-xam-1.png",
+            "./assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-xam-1.png",
         hoverImage:
-            "/assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-xam-2.png",
+            "./assets/img/products-nam/ao-thun/ao-sat-nach-nam-tap-gym-yoga-nam-icado-xam-2.png",
         name: "Áo Sát Nách Nam Tập Gym Yoga ICADO AT1",
         price: 280000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -88,9 +88,9 @@ const data = [
     {
         id: 7,
         normalImage:
-            "/assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-icado-1.jpg",
+            "./assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-icado-1.jpg",
         hoverImage:
-            "/assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-icado-2.jpg",
+            "./assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-icado-2.jpg",
         name: "Quần Dài Tập Gym Yoga Nam ICADO AT3",
         price: 450000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -103,9 +103,9 @@ const data = [
     {
         id: 8,
         normalImage:
-            "/assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-pavo-1.jpg",
+            "./assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-pavo-1.jpg",
         hoverImage:
-            "/assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-pavo-2.jpg",
+            "./assets/img/products-nam/quan/quan-dai-tap-gym-yoga-nam-pavo-2.jpg",
         name: "Quần Dài Tập Gym Yoga Nam PAVO AT1",
         price: 395000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -118,9 +118,9 @@ const data = [
     {
         id: 9,
         normalImage:
-            "/assets/img/products-nam/quan/quan-dui-2-lop-tap-gym-yoga-nam-icado-1.png",
+            "./assets/img/products-nam/quan/quan-dui-2-lop-tap-gym-yoga-nam-icado-1.png",
         hoverImage:
-            "/assets/img/products-nam/quan/quan-dui-2-lop-tap-gym-yoga-nam-icado-2.png",
+            "./assets/img/products-nam/quan/quan-dui-2-lop-tap-gym-yoga-nam-icado-2.png",
         name: " Quần Đùi 2 Lớp Tập Gym Yoga Nam ICADO AT27",
         price: 320000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -133,9 +133,9 @@ const data = [
     {
         id: 10,
         normalImage:
-            "/assets/img/products-nam/quan/quan-dui-tap-gym-yoga-nam-icado-at22-1.png",
+            "./assets/img/products-nam/quan/quan-dui-tap-gym-yoga-nam-icado-at22-1.png",
         hoverImage:
-            "/assets/img/products-nam/quan/quan-dui-tap-gym-yoga-nam-icado-at22-2.png",
+            "./assets/img/products-nam/quan/quan-dui-tap-gym-yoga-nam-icado-at22-2.png",
         name: "Quần Đùi Tập Gym Yoga Nam ICADO AT22",
         price: 265000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -147,8 +147,8 @@ const data = [
     },
     {
         id: 11,
-        normalImage: "/assets/img/products-nam/quan/quan-jogger-1.jpg",
-        hoverImage: "/assets/img/products-nam/quan/quan-jogger-2.jpg",
+        normalImage: "./assets/img/products-nam/quan/quan-jogger-1.jpg",
+        hoverImage: "./assets/img/products-nam/quan/quan-jogger-2.jpg",
         name: "Quần Dài Thể Thao Nam Jogger ICADO SG11",
         price: 320000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -160,8 +160,8 @@ const data = [
     },
     {
         id: 12,
-        normalImage: "/assets/img/products-nam/set-do-tap/set-1.png",
-        hoverImage: "/assets/img/products-nam/set-do-tap/set-1-1.jpg",
+        normalImage: "./assets/img/products-nam/set-do-tap/set-1.png",
+        hoverImage: "./assets/img/products-nam/set-do-tap/set-1-1.jpg",
         name: "Set Tập Gym Yoga Nam Áo Sát Nách Icado AT1 Quần Đùi Icado AT27",
         price: 600000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -172,8 +172,8 @@ const data = [
     },
     {
         id: 13,
-        normalImage: "/assets/img/products-nam/set-do-tap/set-2.jpg",
-        hoverImage: "/assets/img/products-nam/set-do-tap/set-2-2.jpg",
+        normalImage: "./assets/img/products-nam/set-do-tap/set-2.jpg",
+        hoverImage: "./assets/img/products-nam/set-do-tap/set-2-2.jpg",
         name: "Set Tập Gym Yoga Nam Áo Thun Icado AT11 Quần Dài Icado AT5",
         price: 675000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -184,8 +184,8 @@ const data = [
     },
     {
         id: 14,
-        normalImage: "/assets/img/products-nam/set-do-tap/set-3.jpg",
-        hoverImage: "/assets/img/products-nam/set-do-tap/set-3-3.jpg",
+        normalImage: "./assets/img/products-nam/set-do-tap/set-3.jpg",
+        hoverImage: "./assets/img/products-nam/set-do-tap/set-3-3.jpg",
         name: "Set Tập Gym Yoga Nam Áo Polo ICADO AT37 Quần Đùi ICADO AT26",
         price: 545000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -197,8 +197,8 @@ const data = [
     // ---------------------Nữ---------------------------------------------
     {
         id: 15,
-        normalImage: "/assets/img/products-nu/ao-thun/Áo Ba Lỗ-1.png",
-        hoverImage: "/assets/img/products-nu/ao-thun/Áo Ba Lỗ-1-1.png",
+        normalImage: "./assets/img/products-nu/ao-thun/Áo Ba Lỗ-1.png",
+        hoverImage: "./assets/img/products-nu/ao-thun/Áo Ba Lỗ-1-1.png",
         name: "Áo Ba Lỗ Nữ Tập Gym Yoga Mút Ngực ICADO AT3",
         price: 280000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -210,8 +210,8 @@ const data = [
     },
     {
         id: 16,
-        normalImage: "/assets/img/products-nu/ao-thun/ao-bra-tap-gym-1.png",
-        hoverImage: "/assets/img/products-nu/ao-thun/ao-bra-tap-gym-1-1.png",
+        normalImage: "./assets/img/products-nu/ao-thun/ao-bra-tap-gym-1.png",
+        hoverImage: "./assets/img/products-nu/ao-thun/ao-bra-tap-gym-1-1.png",
         name: "Áo Bra Tập Gym Yoga Dệt Kim Co Giãn Tốt, Thoáng Khí HN58",
         price: 265000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -224,9 +224,9 @@ const data = [
     {
         id: 17,
         normalImage:
-            "/assets/img/products-nu/ao-thun/ao-ngan-tay-nu-tap-gym-yoga-high-class-icado-1.png",
+            "./assets/img/products-nu/ao-thun/ao-ngan-tay-nu-tap-gym-yoga-high-class-icado-1.png",
         hoverImage:
-            "/assets/img/products-nu/ao-thun/ao-ngan-tay-nu-tap-gym-yoga-high-class-icado-1-1.png",
+            "./assets/img/products-nu/ao-thun/ao-ngan-tay-nu-tap-gym-yoga-high-class-icado-1-1.png",
         name: "Áo Ngắn Tay Nữ Tập Gym Yoga High Class ICADO TH29",
         price: 295000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -239,9 +239,9 @@ const data = [
     {
         id: 18,
         normalImage:
-            "/assets/img/products-nu/ao-thun/ao-croptop-tap-gym-yoga-nu-1.png",
+            "./assets/img/products-nu/ao-thun/ao-croptop-tap-gym-yoga-nu-1.png",
         hoverImage:
-            "/assets/img/products-nu/ao-thun/ao-croptop-tap-gym-yoga-nu-1-1.png",
+            "./assets/img/products-nu/ao-thun/ao-croptop-tap-gym-yoga-nu-1-1.png",
         name: " Áo Croptop Tập Gym Yoga Nữ ICADO AT7",
         price: 220000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -253,8 +253,8 @@ const data = [
     },
     {
         id: 19,
-        normalImage: "/assets/img/products-nu/quan/quan-dai-1.jpg",
-        hoverImage: "/assets/img/products-nu/quan/quan-dai-1-1.jpg",
+        normalImage: "./assets/img/products-nu/quan/quan-dai-1.jpg",
+        hoverImage: "./assets/img/products-nu/quan/quan-dai-1-1.jpg",
         name: " Quần Dài Tập Gym Yoga Nữ Trơn PAVO AT2",
         price: 300000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -266,8 +266,8 @@ const data = [
     },
     {
         id: 20,
-        normalImage: "/assets/img/products-nu/quan/quan-lung-tap-gym-1.jpg",
-        hoverImage: "/assets/img/products-nu/quan/quan-lung-tap-gym-1-1.jpg",
+        normalImage: "./assets/img/products-nu/quan/quan-lung-tap-gym-1.jpg",
+        hoverImage: "./assets/img/products-nu/quan/quan-lung-tap-gym-1-1.jpg",
         name: " Quần Lửng Tập Gym Yoga Nữ Trơn Icado QL1",
         price: 200000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -280,9 +280,9 @@ const data = [
     {
         id: 21,
         normalImage:
-            "/assets/img/products-nu/quan/quan-dai-jogger-tap-gym-yoga-nu-1.jpg",
+            "./assets/img/products-nu/quan/quan-dai-jogger-tap-gym-yoga-nu-1.jpg",
         hoverImage:
-            "/assets/img/products-nu/quan/quan-dai-jogger-tap-gym-yoga-nu-1-1.jpg",
+            "./assets/img/products-nu/quan/quan-dai-jogger-tap-gym-yoga-nu-1-1.jpg",
         name: " Quần Dài Jogger Tập Gym Yoga Nữ SG10",
         price: 295000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -294,8 +294,8 @@ const data = [
     },
     {
         id: 22,
-        normalImage: "/assets/img/products-nu/set-nu/set-nu-1.jpg",
-        hoverImage: "/assets/img/products-nu/set-nu/set-nu-1-1.jpg",
+        normalImage: "./assets/img/products-nu/set-nu/set-nu-1.jpg",
+        hoverImage: "./assets/img/products-nu/set-nu/set-nu-1-1.jpg",
         name: " Set Đồ Tập Gym Yoga Nữ Bra HN58 Quần Legging Icado AT12",
         price: 500000,
         tittle: "88% Polyester, 12% spandex, co giãn 4 chiều",
@@ -306,8 +306,8 @@ const data = [
     },
     {
         id: 23,
-        normalImage: "/assets/img/phukien/day-nhay/57d30abe1989d8d78198.jpg",
-        hoverImage: "/assets/img/phukien/day-nhay/c2c5cfa9dc9e1dc0448f.jpg",
+        normalImage: "./assets/img/phukien/day-nhay/57d30abe1989d8d78198.jpg",
+        hoverImage: "./assets/img/phukien/day-nhay/c2c5cfa9dc9e1dc0448f.jpg",
         name: "Dây Nhảy Tập Thể Dục SKIPPING-ROPE",
         price: 100000,
         tittle: "Nhựa, cao su tự nhiên",
@@ -317,8 +317,8 @@ const data = [
     },
     {
         id: 24,
-        normalImage: "/assets/img/phukien/day-nhay/219.png",
-        hoverImage: "/assets/img/phukien/day-nhay/217.png",
+        normalImage: "./assets/img/phukien/day-nhay/219.png",
+        hoverImage: "./assets/img/phukien/day-nhay/217.png",
         name: "Dây Nhảy Tập Thể Dục ADIDAS Chính Hãng Cao Cấp ADRP-13011",
         price: 359000,
         tittle: "nhựa TPU, PP",
@@ -329,9 +329,9 @@ const data = [
     {
         id: 25,
         normalImage:
-            "/assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn14-7.png",
+            "./assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn14-7.png",
         hoverImage:
-            "/assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn14-5.png",
+            "./assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn14-5.png",
         name: " Dây Kháng Lực Đàn Hồi, Miniband Tập Mông Aolikes HN14",
         price: 100000,
         tittle: "Polyester, Latex Silk",
@@ -342,9 +342,9 @@ const data = [
     {
         id: 26,
         normalImage:
-            "/assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn15-4.png",
+            "./assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn15-4.png",
         hoverImage:
-            "/assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn15-5.png",
+            "./assets/img/phukien/day-khang-luc/day-khang-luc-day-dan-hoi-tap-gym-tap-mong-aolikes-hn15-5.png",
         name: " Dây Kháng Lực Đàn Hồi, Miniband Tập Mông Aolikes HN15",
         price: 50000,
         tittle: "Polyester, Latex Silk",
@@ -355,8 +355,8 @@ const data = [
     // Đồ giảm giá
     {
         id: 27,
-        normalImage: "/assets/img/products-nam/giam-gia/1.jpg",
-        hoverImage: "/assets/img/products-nam/giam-gia/1-1.jpg",
+        normalImage: "./assets/img/products-nam/giam-gia/1.jpg",
+        hoverImage: "./assets/img/products-nam/giam-gia/1-1.jpg",
         name: "Áo Body Tập Gym Yoga Nam ICADO AT33",
         initialPrice: 280000,
         price: 119000,
@@ -367,8 +367,8 @@ const data = [
     },
     {
         id: 28,
-        normalImage: "/assets/img/products-nam/giam-gia/2.jpg",
-        hoverImage: "/assets/img/products-nam/giam-gia/2-1.jpg",
+        normalImage: "./assets/img/products-nam/giam-gia/2.jpg",
+        hoverImage: "./assets/img/products-nam/giam-gia/2-1.jpg",
         name: "Áo Ngắn Tay Tập Gym Yoga Nam PAVO AT5",
         initialPrice: 280000,
         price: 119000,
@@ -379,8 +379,8 @@ const data = [
     },
     {
         id: 29,
-        normalImage: "/assets/img/products-nu/giam-gia/1.jpg",
-        hoverImage: "/assets/img/products-nu/giam-gia/1-1.jpg",
+        normalImage: "./assets/img/products-nu/giam-gia/1.jpg",
+        hoverImage: "./assets/img/products-nu/giam-gia/1-1.jpg",
         name: "Áo Bra Tập Gym Yoga ICADO AT8",
         initialPrice: 280000,
         price: 99000,
@@ -391,8 +391,8 @@ const data = [
     },
     {
         id: 30,
-        normalImage: "/assets/img/products-nu/giam-gia/2.png",
-        hoverImage: "/assets/img/products-nu/giam-gia/2-1.png",
+        normalImage: "./assets/img/products-nu/giam-gia/2.png",
+        hoverImage: "./assets/img/products-nu/giam-gia/2-1.png",
         name: "Áo Ngắn Tay Tập Gym Yoga Nam PAVO AT5",
         initialPrice: 280000,
         price: 99000,
